@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSB - Pondok Pesantren Tahfidz Takhossus Putri Sa'ad bin Abi Waqqas</title>
+  <meta name="description" content="Penerimaan Santriwati Baru (PSB) TP 2027/2028 Pondok Pesantren Tahfidz Takhossus Putri Sa'ad bin Abi Waqqas - Tingkat Wustha / Ulya (Khusus Putri).">
+  <!-- Google Fonts: Montserrat & Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ============================================================
+       VARIABEL WARNA & TEMA (SESUAI PANDUAN)
+       - Primer: Merah Marun (Burgundy / Dark Red) #72101E / #580A15
+       - Aksen: Kuning Emas (Gold) #D4AF37 / #E5C158 / #C5A059
+       - Latar Belakang: Krem Terang (Light Beige / Off-White) #FAF6F0
+       - Teks: Hitam/Abu-abu gelap #2D2D2D, Putih di atas Marun
+       ============================================================ */
+    :root {
+      --primary-maroon: #72101E;
+      --primary-maroon-dark: #560B15;
+      --primary-maroon-light: #8E1627;
+      --accent-gold: #D4AF37;
+      --accent-gold-light: #F3E5AB;
+      --accent-gold-dark: #B38F23;
+      --accent-gold-glow: rgba(212, 175, 55, 0.35);
+      --bg-beige: #FAF6F0;
+      --bg-card: #FFFFFF;
+      --text-dark: #2B2D42;
+      --text-muted: #555B6E;
+      --text-white: #FFFFFF;
+      --border-color: #E8DFD0;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-soft: 0 10px 25px -5px rgba(114, 16, 30, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      --shadow-hover: 0 20px 30px -10px rgba(114, 16, 30, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-beige);
+      color: var(--text-dark);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    /* Semua Judul Bagian: BOLD UPPERCASE sesuai panduan */
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary-maroon);
+      font-size: 1.85rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 650px;
+      margin: 0 auto 2.5rem auto;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ============================================================
+       TOPBAR & NAVIGASI
+       ============================================================ */
+    .topbar {
+      background-color: var(--primary-maroon-dark);
+      color: var(--text-white);
+      padding: 8px 0;
+      font-size: 0.85rem;
+      border-bottom: 2px solid var(--accent-gold);
+    }
+
+    .topbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .topbar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212, 175, 55, 0.2);
+      border: 1px solid var(--accent-gold);
+      padding: 3px 12px;
+      border-radius: 50px;
+      color: var(--accent-gold-light);
+      font-weight: 600;
+      font-size: 0.78rem;
+    }
+
+    .navbar {
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-emblem {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--primary-maroon-dark) 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-gold);
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(114, 16, 30, 0.2);
+    }
+
+    .logo-text h2 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary-maroon);
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      font-size: 0.75rem;
+      color: var(--accent-gold-dark);
+      font-weight: 600;
+      display: block;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-maroon);
+    }
+
+    .nav-cta {
+      background: var(--primary-maroon);
+      color: #FFFFFF !important;
+      padding: 8px 18px;
+      border-radius: 50px;
+      border: 1px solid var(--accent-gold);
+      font-size: 0.85rem !important;
+      transition: all 0.25s ease !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-maroon-light) !important;
+      box-shadow: 0 4px 12px var(--accent-gold-glow);
+      transform: translateY(-1px);
+    }
+
+    /* ============================================================
+       1. HERO SECTION
+       ============================================================ */
+    .hero {
+      position: relative;
+      background: linear-gradient(145deg, #580A15 0%, #72101E 50%, #45070F 100%);
+      color: var(--text-white);
+      padding: 70px 0 85px 0;
+      overflow: hidden;
+      border-bottom: 4px solid var(--accent-gold);
+    }
+
+    /* Pola geometris islami dekoratif di latar hero */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px);
+      background-size: 24px 24px;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .hero-institution {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent-gold);
+      margin-bottom: 14px;
+      display: inline-block;
+      padding: 6px 18px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+    }
+
+    .hero-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .hero-title .gold-text {
+      color: var(--accent-gold);
+      display: inline-block;
+    }
+
+    .hero-subtitle {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #F8F5EE;
+      margin-bottom: 22px;
+    }
+
+    .hero-badge-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(212, 175, 55, 0.1) 100%);
+      border: 1.5px solid var(--accent-gold);
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-gold-light);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--accent-gold) 0%, #B8860B 100%);
+      color: #3b060d;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 16px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid #FFF8DC;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.55), 0 6px 12px rgba(0, 0, 0, 0.4);
+      background: linear-gradient(135deg, #F5D061 0%, #D4AF37 100%);
+    }
+
+    .hero-note {
+      margin-top: 14px;
+      font-size: 0.85rem;
+      color: #E2D9CC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* ============================================================
+       CARD-BASED UI DENGAN RIBBON DESIGN (PITA JUDUL)
+       ============================================================ */
+    .card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      margin-bottom: 30px;
+      position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    /* Desain Ribbon (Pita Judul Kotak) */
+    .card-ribbon-header {
+      background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--primary-maroon-dark) 100%);
+      color: var(--text-white);
+      padding: 14px 24px;
+      position: relative;
+      border-bottom: 3px solid var(--accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-ribbon-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    .card-ribbon-title .ribbon-icon {
+      color: var(--accent-gold);
+    }
+
+    .card-ribbon-tag {
+      background: rgba(212, 175, 55, 0.2);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold-light);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .card-body {
+      padding: 24px;
+    }
+
+    /* List Item dengan Ikon Vektor Sederhana */
+    .icon-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .icon-list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    .list-icon-wrapper {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: rgba(114, 16, 30, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      color: var(--primary-maroon);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+
+    .list-icon-wrapper svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ============================================================
+       2. BAGIAN TENTANG KAMI (MOTTO, VISI & MISI)
+       ============================================================ */
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    .motto-banner {
+      background: linear-gradient(135deg, #FFFFFF 0%, #FBF7EE 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 28px 32px;
+      text-align: center;
+      margin-bottom: 35px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+    }
+
+    .motto-banner::before {
+      content: "“";
+      font-family: Georgia, serif;
+      font-size: 4rem;
+      color: var(--accent-gold);
+      opacity: 0.4;
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      line-height: 1;
+    }
+
+    .motto-label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary-maroon);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .motto-text {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #2D2D2D;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .visi-card, .misi-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .visi-card .card-body {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #333333;
+      background: #FFFFFF;
+    }
+
+    /* ============================================================
+       3. BAGIAN PROGRAM & FASILITAS
+       ============================================================ */
+    .badge-gold-ribbon {
+      background: linear-gradient(90deg, var(--accent-gold) 0%, #B8860B 100%);
+      color: #2B060C;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .facility-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .facility-item {
+      background: #FDFBF8;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .facility-item:hover {
+      border-color: var(--accent-gold);
+      background: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .facility-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--primary-maroon);
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       4. INFORMASI PENDAFTARAN (SYARAT, WAKTU & ALUR)
+       ============================================================ */
+    .timeline-alur {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+    }
+
+    .timeline-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #FDFCF9;
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--primary-maroon);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      transition: all 0.2s ease;
+    }
+
+    .timeline-step:hover {
+      border-left-color: var(--accent-gold);
+      background: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--primary-maroon);
+      color: var(--accent-gold);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1.5px solid var(--accent-gold);
+    }
+
+    .step-content strong {
+      display: block;
+      color: var(--primary-maroon);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .step-content p {
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      margin: 0;
+    }
+
+    .waktu-box {
+      background: #FAF5EB;
+      border: 1.5px dashed var(--accent-gold);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin-top: 18px;
+    }
+
+    .waktu-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 0.92rem;
+    }
+
+    .waktu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .waktu-label {
+      font-weight: 700;
+      color: var(--primary-maroon);
+      min-width: 140px;
+    }
+
+    /* ============================================================
+       5. BAGIAN BIAYA & BEASISWA
+       ============================================================ */
+    .potongan-badge-card {
+      background: linear-gradient(135deg, #FFFDF8 0%, #FBF5E8 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 18px rgba(212, 175, 55, 0.15);
+    }
+
+    .potongan-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary-maroon);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 1.05rem;
+      margin-bottom: 14px;
+      border-bottom: 1px dashed var(--accent-gold);
+      padding-bottom: 8px;
+    }
+
+    .potongan-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .potongan-item {
+      background: #FFFFFF;
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid #EADBBE;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .potongan-nominal {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      color: var(--primary-maroon);
+      font-size: 1.15rem;
+    }
+
+    .biaya-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .biaya-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s ease;
+    }
+
+    .biaya-card.highlight {
+      border: 2px solid var(--accent-gold);
+      position: relative;
+    }
+
+    .biaya-card.highlight::before {
+      content: "POPULER / UTAMA";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--accent-gold);
+      color: #2D050A;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-bottom-left-radius: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .biaya-head {
+      background: #FAF6F0;
+      padding: 16px 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .biaya-card.highlight .biaya-head {
+      background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--primary-maroon-dark) 100%);
+      color: #FFFFFF;
+    }
+
+    .biaya-head h4 {
+      font-size: 1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 0;
+    }
+
+    .biaya-card.highlight .biaya-head h4 {
+      color: #FFFFFF;
+    }
+
+    .biaya-price {
+      padding: 22px 14px 14px 14px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      color: var(--primary-maroon);
+      font-size: 1.7rem;
+      line-height: 1.2;
+    }
+
+    .biaya-price small {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 4px;
+    }
+
+    .biaya-desc {
+      padding: 0 16px 20px 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      flex: 1;
+    }
+
+    .free-badge {
+      display: inline-block;
+      background: #10B981;
+      color: #FFFFFF;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* ============================================================
+       6. FOOTER (KONTAK & PEMBAYARAN)
+       ============================================================ */
+    .footer {
+      background: linear-gradient(145deg, #4A070F 0%, #680E1B 60%, #3B050B 100%);
+      color: var(--text-white);
+      border-top: 4px solid var(--accent-gold);
+      padding: 60px 0 25px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 45px;
+    }
+
+    .footer-box-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent-gold);
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-text {
+      color: #E2DDD5;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      color: #F8F5EE;
+      font-size: 0.92rem;
+    }
+
+    .contact-item svg {
+      color: var(--accent-gold);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25D366;
+      color: #FFFFFF;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-top: 6px;
+      font-size: 0.92rem;
+      transition: all 0.25s ease;
+    }
+
+    .wa-btn:hover {
+      background: #20BA5A;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* Rekening Bank Card */
+    .rekening-card {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .rekening-bank {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .bank-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--accent-gold);
+    }
+
+    .rekening-number {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #FFFFFF;
+    }
+
+    .rekening-an {
+      font-size: 0.82rem;
+      color: #E2DDD5;
+      margin-top: 2px;
+    }
+
+    .copy-btn {
+      background: rgba(212, 175, 55, 0.2);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold-light);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-gold);
+      color: #3b060d;
+    }
+
+    .footer-divider {
+      border: 0;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+      margin: 30px 0 25px 0;
+    }
+
+    .footer-closing {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    .closing-quote {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      font-style: italic;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .copyright {
+      font-size: 0.85rem;
+      color: #C0B9AD;
+    }
+
+    /* Floating WhatsApp Button for Mobile/Desktop */
+    .floating-wa {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 99;
+      background: #25D366;
+      color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: 2px solid #FFFFFF;
+    }
+
+    .floating-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    }
+
+    /* ============================================================
+       RESPONSIVE DESIGN (HP & TABLET)
+       ============================================================ */
+    @media (max-width: 992px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .biaya-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .hero-title {
+        font-size: 1.85rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .facility-grid {
+        grid-template-columns: 1fr;
+      }
+      .potongan-grid {
+        grid-template-columns: 1fr;
+      }
+      .section-title {
+        font-size: 1.5rem;
+      }
+      .hero {
+        padding: 45px 0 60px 0;
+      }
+      .hero-title {
+        font-size: 1.55rem;
+      }
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+      .cta-button {
+        font-size: 1rem;
+        padding: 14px 26px;
+        width: 100%;
+        max-width: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TOPBAR ================= -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Penerimaan Santriwati Baru (PSB) TP 2027/2028
+      </div>
+      <div>
+        <span>Hotline WhatsApp: <strong>0821-5234-3540</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#hero" class="logo-container">
+        <div class="logo-emblem">🕌</div>
+        <div class="logo-text">
+          <h2>PONPES SA'AD BIN ABI WAQQAS</h2>
+          <span>TAHFIDZ TAKHOSSUS PUTRI</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#tentang-kami">Tentang Kami</a></li>
+        <li><a href="#program-fasilitas">Program & Fasilitas</a></li>
+        <li><a href="#informasi-pendaftaran">Pendaftaran</a></li>
+        <li><a href="#biaya-beasiswa">Biaya</a></li>
+        <li><a href="#kontak-lokasi">Kontak</a></li>
+        <li>
+          <a href="#informasi-pendaftaran" class="nav-cta">
+            Daftar Sekarang
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= 1. BAGIAN HERO (ATAS) ================= -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-institution">
+        Pondok Pesantren Tahfidz Takhossus Putri Sa'ad bin Abi Waqqas
+      </div>
+      
+      <h1 class="hero-title">
+        PSB - Penerimaan Santriwati Baru <br>
+        <span class="gold-text">Tahun Pelajaran 2027/2028</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Tingkat Wustha / Ulya (Khusus Putri)
+      </p>
+
+      <div class="hero-badge-wrap">
+        <div class="hero-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Hafalan Al-Qur'an 30 Juz
+        </div>
+        <div class="hero-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Kurikulum Takhossus Putri
+        </div>
+      </div>
+
+      <div>
+        <a href="https://wa.me/6282152343540?text=Assalamu'alaikum%20Admin%20PSB%20Ponpes%20Putri%20Sa'ad%20bin%20Abi%20Waqqas,%20saya%20ingin%20mendaftarkan%20putri%20kami." target="_blank" rel="noopener noreferrer" class="cta-button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Ayo! Daftarkan Diri Sekarang! (Kuota Terbatas)
+        </a>
+      </div>
+
+      <div class="hero-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Pendaftaran Dibuka Mulai: <strong>1 September 2026</strong> | Biaya Pendaftaran: <strong>GRATIS</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. BAGIAN TENTANG KAMI ================= -->
+  <section class="section-padding" id="tentang-kami">
+    <div class="container">
+      <h2 class="section-title">TENTANG KAMI</h2>
+      <p class="section-subtitle">Membina generasi muslimah berakhlak mulia dengan pondasi Al-Qur'an dan as-Sunnah</p>
+
+      <!-- MOTTO -->
+      <div class="motto-banner">
+        <div class="motto-label">MOTTO PONDOK PESANTREN</div>
+        <div class="motto-text">
+          "Pemantapan aqidah, penghafalan Al-Qur'an, penguasaan bahasa Arab & Inggris, serta pemahaman kitab-kitab keislaman."
+        </div>
+      </div>
+
+      <!-- VISI & MISI GRID -->
+      <div class="grid-2">
+        <!-- VISI -->
+        <div class="card visi-card">
+          <div class="card-ribbon-header">
+            <h3 class="card-ribbon-title">
+              <span class="ribbon-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              </span>
+              VISI
+            </h3>
+            <span class="card-ribbon-tag">Cita-Cita Utama</span>
+          </div>
+          <div class="card-body">
+            <p>
+              "Pondok Pesantren Sa'ad bin Abi Waqqas sebagai pusat kaderisasi generasi muslimah yang beriman, berilmu, berakhlak mulia, dan bermanfaat bagi umat."
+            </p>
+          </div>
+        </div>
+
+        <!-- MISI -->
+        <div class="card misi-card">
+          <div class="card-ribbon-header">
+            <h3 class="card-ribbon-title">
+              <span class="ribbon-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </span>
+              MISI
+            </h3>
+            <span class="card-ribbon-tag">5 Komitmen</span>
+          </div>
+          <div class="card-body">
+            <ul class="icon-list">
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Menyelenggarakan pendidikan berbasis nilai-nilai Islam dan akhlakul karimah.</span>
+              </li>
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Membentuk santriwati yang memiliki ilmu pengetahuan dan keterampilan yang komprehensif.</span>
+              </li>
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Menciptakan lingkungan belajar yang kondusif, disiplin, dan islami.</span>
+              </li>
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Menumbuhkan semangat kemandirian dan tanggung jawab.</span>
+              </li>
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Membiasakan pola hidup sehat, bersih, dan berwawasan lingkungan.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. BAGIAN PROGRAM & FASILITAS ================= -->
+  <section class="section-padding" style="background-color: #F5EFE6;" id="program-fasilitas">
+    <div class="container">
+      <h2 class="section-title">PROGRAM & FASILITAS</h2>
+      <p class="section-subtitle">Sarana terpadu dan kurikulum unggulan untuk kenyamanan serta prestasi ananda santriwati</p>
+
+      <div class="grid-2">
+        <!-- PROGRAM UNGGULAN -->
+        <div class="card">
+          <div class="card-ribbon-header">
+            <h3 class="card-ribbon-title">
+              <span class="ribbon-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </span>
+              PROGRAM UNGGULAN
+            </h3>
+            <span class="card-ribbon-tag">Prioritas</span>
+          </div>
+          <div class="card-body">
+            <ul class="icon-list">
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </span>
+                <div>
+                  <strong>Hafalan Al-Qur'an (Tahfidz)</strong> Target Hafalan Hingga 30 Juz
+                </div>
+              </li>
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </span>
+                <div>
+                  <strong>Penguasaan Bahasa Arab & Inggris</strong> (Lisan & Tulisan)
+                </div>
+              </li>
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </span>
+                <div>
+                  <strong>Kajian Kitab Kuning / Turats</strong>
+                </div>
+              </li>
+              <li class="icon-list-item">
+                <span class="list-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </span>
+                <div>
+                  <strong>Program Kemandirian & Leadership</strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FASILITAS KHUSUS PUTRI -->
+        <div class="card">
+          <div class="card-ribbon-header">
+            <h3 class="card-ribbon-title">
+              <span class="ribbon-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </span>
+              FASILITAS KHUSUS PUTRI
+            </h3>
+            <span class="card-ribbon-tag">Aman & Terjaga</span>
+          </div>
+          <div class="card-body">
+            <div class="facility-grid">
+              <div class="facility-item">
+                <div class="facility-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div>
+                  <strong>Asrama Putri Khusus & Tertutup</strong>
+                  <div style="font-size:0.8rem; color:var(--text-muted);">Privasi santriwati terjaga optimal</div>
+                </div>
+              </div>
+
+              <div class="facility-item">
+                <div class="facility-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                  <strong>Musholla & Ruang Kelas Nyaman</strong>
+                  <div style="font-size:0.8rem; color:var(--text-muted);">Kondusif untuk belajar & ibadah</div>
+                </div>
+              </div>
+
+              <div class="facility-item">
+                <div class="facility-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <div>
+                  <strong>Ekstrakurikuler Penunjang / Tata Boga</strong>
+                  <div style="font-size:0.8rem; color:var(--text-muted);">Keterampilan hidup & keputrian</div>
+                </div>
+              </div>
+
+              <div class="facility-item">
+                <div class="facility-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                </div>
+                <div>
+                  <strong>Pengawasan CCTV 24 Jam</strong>
+                  <div style="font-size:0.8rem; color:var(--text-muted);">Keamanan dan ketertiban asrama</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. INFORMASI PENDAFTARAN ================= -->
+  <section class="section-padding" id="informasi-pendaftaran">
+    <div class="container">
+      <h2 class="section-title">INFORMASI PENDAFTARAN</h2>
+      <p class="section-subtitle">Persyaratan berkas, jadwal pendaftaran, dan alur seleksi masuk santriwati</p>
+
+      <div class="grid-2">
+        <!-- SYARAT & WAKTU -->
+        <div>
+          <!-- SYARAT PENDAFTARAN -->
+          <div class="card">
+            <div class="card-ribbon-header">
+              <h3 class="card-ribbon-title">
+                <span class="ribbon-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </span>
+                SYARAT PENDAFTARAN
+              </h3>
+              <span class="card-ribbon-tag">Dokumen</span>
+            </div>
+            <div class="card-body">
+              <ul class="icon-list">
+                <li class="icon-list-item">
+                  <span class="list-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span><strong>Muslimah</strong> & Sehat Jasmani Rohani</span>
+                </li>
+                <li class="icon-list-item">
+                  <span class="list-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span>Fotocopy Akta Kelahiran (1 lembar)</span>
+                </li>
+                <li class="icon-list-item">
+                  <span class="list-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span>Fotocopy Kartu Keluarga (1 lembar)</span>
+                </li>
+                <li class="icon-list-item">
+                  <span class="list-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span>Pasfoto warna ukuran 3x4 (3 lembar)</span>
+                </li>
+                <li class="icon-list-item">
+                  <span class="list-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span>Fotocopy Raport 2 tahun terakhir (1 rangkap)</span>
+                </li>
+              </ul>
+
+              <!-- WAKTU PENDAFTARAN BOX -->
+              <div class="waktu-box">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; color:var(--primary-maroon); margin-bottom:10px; font-size:0.95rem; text-transform:uppercase;">
+                  WAKTU PENDAFTARAN:
+                </div>
+                <div class="waktu-item">
+                  <span class="waktu-label">Mulai Pendaftaran:</span>
+                  <span><strong>1 September 2026</strong></span>
+                </div>
+                <div class="waktu-item">
+                  <span class="waktu-label">Waktu Pelayanan:</span>
+                  <span>Pukul <strong>08.00 - 15.00 WIB</strong> (Setiap hari, kecuali Jumat)</span>
+                </div>
+                <div class="waktu-item">
+                  <span class="waktu-label">Mulai Belajar (KBM):</span>
+                  <span><strong>Juli 2027</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ALUR PENDAFTARAN -->
+        <div>
+          <div class="card">
+            <div class="card-ribbon-header">
+              <h3 class="card-ribbon-title">
+                <span class="ribbon-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+                </span>
+                ALUR PENDAFTARAN
+              </h3>
+              <span class="card-ribbon-tag">5 Langkah Mudah</span>
+            </div>
+            <div class="card-body">
+              <div class="timeline-alur">
+                <div class="timeline-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <strong>Offline</strong>
+                    <p>Pendaftar datang langsung ke pondok membawa berkas.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <strong>Online</strong>
+                    <p>Mengirim berkas pendaftaran via WhatsApp Admin.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <strong>Seleksi</strong>
+                    <p>Mengikuti tes seleksi (Offline / Online).</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <strong>Pengumuman</strong>
+                    <p>Diumumkan 2 hari setelah tes.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step">
+                  <div class="step-number">5</div>
+                  <div class="step-content">
+                    <strong>Daftar Ulang</strong>
+                    <p>Konfirmasi dan pembayaran biaya masuk.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. BAGIAN BIAYA & BEASISWA ================= -->
+  <section class="section-padding" style="background-color: #F5EFE6;" id="biaya-beasiswa">
+    <div class="container">
+      <h2 class="section-title">BIAYA & BEASISWA</h2>
+      <p class="section-subtitle">Investasi pendidikan dunia & akhirat yang transparan dan terjangkau dengan program beasiswa</p>
+
+      <!-- POTONGAN BIAYA / BEASISWA -->
+      <div class="potongan-badge-card">
+        <div class="potongan-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          POTONGAN BIAYA / BEASISWA
+        </div>
+        <div class="potongan-grid">
+          <div class="potongan-item">
+            <span class="list-icon-wrapper" style="width:36px; height:36px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            </span>
+            <div>
+              <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">PENDAFTAR PERTAMA</div>
+              <div class="potongan-nominal">Potongan Rp100.000</div>
+              <div style="font-size:0.8rem; color:#4B5563;">Dipotong dari uang masuk</div>
+            </div>
+          </div>
+
+          <div class="potongan-item">
+            <span class="list-icon-wrapper" style="width:36px; height:36px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div>
+              <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">SAUDARA KANDUNG AKTIF</div>
+              <div class="potongan-nominal">Potongan Rp200.000 /bulan</div>
+              <div style="font-size:0.8rem; color:#4B5563;">Keringanan SPP bulanan santriwati</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RINCIAN BIAYA 3 KOLOM -->
+      <div class="biaya-grid">
+        <!-- BIAYA PENDAFTARAN -->
+        <div class="biaya-card">
+          <div class="biaya-head">
+            <h4>BIAYA PENDAFTARAN</h4>
+          </div>
+          <div class="biaya-price">
+            <span class="free-badge">GRATIS</span>
+            <small>Tidak dipungut biaya formulir</small>
+          </div>
+          <div class="biaya-desc">
+            Pendaftaran dibuka tanpa pungutan biaya awal. Calon santriwati dapat langsung melengkapi berkas administrasi.
+          </div>
+        </div>
+
+        <!-- BIAYA MASUK -->
+        <div class="biaya-card highlight">
+          <div class="biaya-head">
+            <h4>BIAYA MASUK</h4>
+          </div>
+          <div class="biaya-price">
+            Rp 3.100.000,-
+            <small>Dibayar saat daftar ulang</small>
+          </div>
+          <div class="biaya-desc">
+            <strong>Sudah termasuk:</strong> Kitab, Buku, Lemari, Perlengkapan Makan, & Seragam.
+          </div>
+        </div>
+
+        <!-- SPP BULANAN -->
+        <div class="biaya-card">
+          <div class="biaya-head">
+            <h4>SPP BULANAN</h4>
+          </div>
+          <div class="biaya-price">
+            Rp 650.000,-
+            <small>/ santriwati per bulan</small>
+          </div>
+          <div class="biaya-desc">
+            Menjadi <strong>Rp450.000,-/bulan</strong> untuk santriwati yang memiliki saudara kandung aktif di pondok.
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:35px;">
+        <a href="https://wa.me/6282152343540?text=Assalamu'alaikum%20Admin%20PSB,%20saya%20ingin%20konsultasi%20mengenai%20rincian%20biaya%20dan%20pembayaran." target="_blank" rel="noopener noreferrer" class="cta-button">
+          Konsultasi Rincian Biaya via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. BAGIAN FOOTER (KONTAK & PEMBAYARAN) ================= -->
+  <footer class="footer" id="kontak-lokasi">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- KOLOM 1: INFORMASI & KONTAK -->
+        <div>
+          <div class="footer-box-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            INFORMASI & KONTAK
+          </div>
+          
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <div>
+              <div><strong>WhatsApp Admin Putri:</strong></div>
+              <div style="font-size:1.05rem; font-weight:700; color:var(--accent-gold);">0821-5234-3540</div>
+              <a href="https://wa.me/6282152343540" target="_blank" rel="noopener noreferrer" class="wa-btn">
+                Chat WhatsApp Sekarang
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item" style="margin-top:16px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div><strong>Alamat Pondok:</strong></div>
+              <p style="margin:2px 0 0 0; color:#E2DDD5; font-size:0.88rem;">
+                Jl. Papandayan, Dusun Kubu Manggis, Desa Rambah Tengah Utara, Kec. Rambah, Kab. Rokan Hulu, Pasir Pengaraian, Riau.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- KOLOM 2: REKENING TRANSFER -->
+        <div>
+          <div class="footer-box-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            REKENING TRANSFER
+          </div>
+          <p class="footer-text" style="font-size:0.85rem;">
+            Pembayaran biaya pendaftaran/masuk resmi ditransfer hanya ke rekening berikut:
+          </p>
+
+          <!-- BNI -->
+          <div class="rekening-card">
+            <div class="rekening-bank">
+              <span class="bank-name">BNI</span>
+              <button class="copy-btn" onclick="copyText('1857450684', this)">Salin No. Rek</button>
+            </div>
+            <div class="rekening-number">1857450684</div>
+            <div class="rekening-an">a.n Yayasan Nurul Quran Saad Bin Abi Waqqas</div>
+          </div>
+
+          <!-- BSI -->
+          <div class="rekening-card">
+            <div class="rekening-bank">
+              <span class="bank-name">BSI</span>
+              <button class="copy-btn" onclick="copyText('7150749478', this)">Salin No. Rek</button>
+            </div>
+            <div class="rekening-number">7150749478</div>
+            <div class="rekening-an">a.n Adi Akbar (Mudir Ponpes)</div>
+          </div>
+        </div>
+
+        <!-- KOLOM 3: MEDIA SOSIAL & INFORMASI -->
+        <div>
+          <div class="footer-box-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            SOSIAL MEDIA
+          </div>
+          <p class="footer-text">
+            Ikuti kegiatan harian santriwati dan dokumentasi kegiatan pondok melalui kanal media sosial resmi kami:
+          </p>
+
+          <div style="background:rgba(0,0,0,0.25); border:1px solid rgba(212,175,55,0.3); border-radius:var(--radius-sm); padding:14px; margin-bottom:14px;">
+            <div style="font-weight:700; color:var(--accent-gold); margin-bottom:4px;">
+              Facebook / Instagram:
+            </div>
+            <div style="font-size:0.95rem; color:#FFFFFF; font-weight:600;">
+              Ponpes Sa'ad bin Abi Waqqas
+            </div>
+          </div>
+
+          <div style="font-size:0.82rem; color:#D1C7BA;">
+            *Konfirmasikan bukti transfer pembayaran kepada admin melalui WhatsApp dengan menyertakan nama santriwati.
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <!-- TEKS PENUTUP -->
+      <div class="footer-closing">
+        <div class="closing-quote">
+          "Membentuk Generasi Muslimah Penghafal Al-Qur'an, Berilmu, Berakhlak Mulia, dan Bermanfaat bagi Umat"
+        </div>
+        <div class="copyright">
+          &copy; 2026-2027 Pondok Pesantren Tahfidz Takhossus Putri Sa'ad bin Abi Waqqas. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/6282152343540?text=Assalamu'alaikum%20Admin%20PSB%20Ponpes%20Putri%20Sa'ad%20bin%20Abi%20Waqqas" target="_blank" rel="noopener noreferrer" class="floating-wa" title="Hubungi Admin WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+
+  <!-- SCRIPT UNTUK SALIN REKENING -->
+  <script>
+    function copyText(text, btnElement) {
+      navigator.clipboard.writeText(text).then(function() {
+        var originalText = btnElement.innerText;
+        btnElement.innerText = 'Tersalin!';
+        btnElement.style.backgroundColor = '#D4AF37';
+        btnElement.style.color = '#3b060d';
+        setTimeout(function() {
+          btnElement.innerText = originalText;
+          btnElement.style.backgroundColor = '';
+          btnElement.style.color = '';
+        }, 2000);
+      }).catch(function(err) {
+        alert('Nomor rekening: ' + text);
+      });
+    }
+  </script>
+</body>
+</html>

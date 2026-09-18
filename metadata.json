@@ -1,0 +1,6 @@
+{
+  "name": "PSB Ponpes Putri Sa'ad bin Abi Waqqas",
+  "description": "Landing Page Resmi Penerimaan Santriwati Baru (PSB) TP 2027/2028 Pondok Pesantren Tahfidz Takhossus Putri Sa'ad bin Abi Waqqas",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
